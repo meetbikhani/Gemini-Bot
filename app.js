@@ -30,52 +30,8 @@ const model = genAI.getGenerativeModel({
           parameters: {
             type: "object",
             properties: {
-              // book taj hotel -> check_hotel("taj")
               name: {
                 type: "string"
-              }
-            }
-          }
-        },
-        {
-          name: "getdate",
-          description: "return current date"
-        },
-        {
-          name: "login",
-          description: "tells whether user is login or not"
-        },
-        {
-          name: "book_hotel",
-          description: "books the hotel",
-          parameters: {
-            type: "object",
-            properties: {
-              name: {
-                type: "string"
-              },
-              "checkin date": {
-                type: "string"
-              },
-              "checkout date": {
-                type: "string"
-              },
-              "guest number": {
-                type: "integer"
-              },
-              "guest details": {
-                type: "object",
-                properties: {
-                  name: {
-                    type: "string"
-                  },
-                  "phone number": {
-                    type: "string"
-                  }
-                }
-              },
-              "rooms ": {
-                type: "number"
               }
             }
           }
